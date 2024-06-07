@@ -27,7 +27,7 @@
 #define SYNC_WRITE_HANDLER_FOR_GOAL_PWM 3                               // Write goal pwms to multiple motors at the same time
 #define SYNC_READ_HANDLER_FOR_PRESENT_POSITION_VELOCITY_CURRENT 0       // Read current joint states for multiple motors at the same time
 
-static const std::string OP_MODE = "position";                          // Default motor operating mode is 'position'
+static const std::string OP_MODE = "pwm";                          // Default motor operating mode is 'position'
 static const std::string PROFILE_TYPE = "velocity";                     // Default motor profile type is 'velocity' (as opposed to 'time')
 static const int32_t PROFILE_VELOCITY = 0;                              // Allow joint velocity to be infinite when in position control mode - makes robot very reactive to joint commands
 static const int32_t PROFILE_ACCELERATION = 0;                          // Allow joint acceleration to be infinite when in position control mode - makes robot very reactive to joint commands
